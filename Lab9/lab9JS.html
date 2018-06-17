@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAB 09</title>
+<script>
+function displayWord(){
+   var Stringinput=document.getElementById('str1').value;
+    var arr=Stringinput.split(' ');
+    document.getElementById('result').value=arr.length;
+var output="";
+    for (s=0;s<arr.length;s++){
+output+=arr[s];
+output+='\n';
+}
+    alert(output);
+}
+function wordFind(){
+    Stringinput=document.getElementById('str2').value;
+    wordinput=document.getElementById('str3').value;
+    if (Stringinput.search(wordinput)!=-1)
+        alert("found");
+else alert("Not found");
+}
+</script>
+</head>
+<body>
+<h1>a)String Demo</h1>
+<label>Enter a String </label>
+<input id ="str1"type="text" placeholder="Enter a string here ">
+<br>
+<label for="">Result</label>
+<input id="result" type="text" ><br>
+<input type="submit" onclick="displayWord()" value="Find number of Word (space separeted)">
+
+
+<h1>b) String Demo</h1>
+<label>Enter a String </label>
+<input id ="str2"type="text" placeholder="Enter a string here ">
+<br>
+<label for="">Enter a word </label>
+<input id="str3" type="text" ><br>
+<input type="submit" onclick="wordFind()" value="Find  Word in a string ">
+
+
+</body>
+</html>

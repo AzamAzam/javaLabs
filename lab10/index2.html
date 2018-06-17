@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>my Form </title>
+</head>
+<body>
+	<H2>Please fill out this form:</H2>
+
+	<FORM METHOD="post" ACTION="/lab10/submitinfo"NAME="myform">
+		<table>
+		<tr>	<td><label for="fname">First Name </label></td>	
+				<td><INPUT TYPE="text" NAME="fname" pattern="[a-zA-Z]*"></td>
+				</tr>
+				<tr>
+					<td>
+					<label for="lname">Last Name </label>
+					</td>	
+					<td><INPUT TYPE="text" NAME="lname" pattern="[a-zA-Z]*"></td>
+					</tr>
+					<tr>	<td><label for="DOB">Date of Birth </label></td>	
+					<td>	<INPUT TYPE="date" NAME="DOB"></td>
+						</tr>
+						<tr>	<td><label for="gender">GENDER </label></td>	
+							<td><select name="gender"><option>Male</option><option>Female</option>
+								</select></td>
+							</tr>
+						</tr>
+						<tr>	<td><label for="email">Email </label></td>	
+						<td>	<INPUT TYPE="email" NAME="email"></td>
+							</tr>
+				<td><INPUT TYPE="submit" value="submit"></td>
+				<td><INPUT TYPE="reset" value="Reset"></td>
+				</table>
+	</FORM>
+<h1 style="color:red"></h1>
+</body>
+</html>
